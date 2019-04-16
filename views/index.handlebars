@@ -8,11 +8,11 @@
     <div>
       <ul>
         {{#each burger}}
-        {{#unless devoured}}
-        <li>
-          {{burger_name}}
-        </li>
-        {{/unless}}
+          {{#unless devoured}}
+            <li>
+              {{burger_name}}
+            </li>
+          {{/unless}}
         {{/each}}
       </ul>
     </div>
@@ -30,9 +30,11 @@
     <div>
       <ul>
         {{#each burger}}
-        {{#if devoured}}
-        {{burger_name}}
-        {{/if}}
+          {{#if devoured}}
+          <li>
+            {{burger_name}}
+          </li>        
+          {{/if}}
         {{/each}}
       </ul>
     </div>
