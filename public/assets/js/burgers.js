@@ -1,4 +1,4 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
+// we are going to wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".eat-burger").on("click", function(event) {
       var id = $(this).data("id");
